@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard</title>
+  
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: #f9f9f9;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 220px;
+      background: #fff;
+      box-shadow: 2px 0 6px rgba(0,0,0,0.1);
+      padding: 20px 0;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar ul li {
+      padding: 12px 20px;
+      cursor: pointer;
+      color: #555;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .sidebar ul li:hover {
+      background: #f0f0f0;
+      color: #000;
+    }
+
+    /* Top Bar */
+    .topbar {
+      margin-left: 220px;
+      height: 60px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .search {
+      flex: 1;
+      margin: 0 20px;
+    }
+
+    .search input {
+      width: 100%;
+      padding: 8px 12px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      outline: none;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .profile img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+    }
+
+    /* Main Content */
+    .main {
+      margin-left: 220px;
+      padding: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+      font-family: "Poppins", sans-serif;
+      height: 100px;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .card p {
+      font-size: 13px;
+      color: #777;
+      margin-top: 5px;
+    }
+
+    .notification {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: red;
+      border-radius: 50%;
+      margin-left: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <ul>
+      <li>Start</li>
+      <li>My Study</li>
+      <li>Session</li>
+      <li>Records Info</li>
+      <li>Student Life</li>
+      <li>Scholarship</li>
+      <li>Practice</li>
+      <li>Contact</li>
+      <li>Career Office</li>
+      <li>Profi-Lingua</li>
+    </ul>
+  </div>
+
+  <!-- Top Bar -->
+  <center><h1>annamalai universite</h1></center>
+    <div class="profile">
+      <span>Nikita Gulak</span>
+      <img src="https://via.placeholder.com/35" alt="profile">
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <div class="grid">
+      <div class="card">
+        <img src="" alt="">
+        <h3>Course Schedule</h3>
+        <p>Algorithms and data structures</p>
+      </div>
+      <div class="card">
+        <h3>Materials</h3>
+        <p>List of subjects and materials</p>
+      </div>
+      <div class="card">
+        <h3>Grades</h3>
+        <p>Check your grades</p>
+      </div>
+      <div class="card">
+        <h3>Messages <span class="notification"></span></h3>
+        <p>Check announcements</p>
+      </div>
+      <div class="card">
+        <h3>Payments <span class="notification"></span></h3>
+        <p>Payments overview</p>
+      </div>
+      <div class="card">
+        <h3>Petitions and Decisions</h3>
+        <p>Check Student Affairs</p>
+      </div>
+      <div class="card">
+        <h3>News</h3>
+        <p>Check our news</p>
+      </div>
+      <div class="card">
+        <h3>Set up an appointment</h3>
+        <p>Available for selected offices</p>
+      </div>
+      <div class="card">
+        <h3>Enrollment</h3>
+        <p>Check requirements</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard</title>
+  
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: #f9f9f9;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 220px;
+      background: #fff;
+      box-shadow: 2px 0 6px rgba(0,0,0,0.1);
+      padding: 20px 0;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar ul li {
+      padding: 12px 20px;
+      cursor: pointer;
+      color: #555;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .sidebar ul li:hover {
+      background: #f0f0f0;
+      color: #000;
+    }
+    .sidebar h3{
+      margin-left: 43px;
+      font-weight: 900;
+      color: rgb(70, 57, 255);
+    }
+
+    /* Top Bar */
+    .topbar {
+      margin-left: 220px;
+      height: 60px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .search {
+      flex: 1;
+      margin: 0 20px;
+    }
+
+    .search input {
+      width: 100%;
+      padding: 8px 12px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      outline: none;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .profile img {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+    }
+
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .card p {
+      font-size: 13px;
+      color: #777;
+      margin-top: 5px;
+    }
+
+    .notification {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: red;
+      border-radius: 50%;
+      margin-left: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h3>AU CSE</h3>
+    <ul>
+      <li>Start</li>
+      <li>My Study</li>
+      <li>Session</li>
+      <li>Records Info</li>
+      <li>Student Life</li>
+    </ul>
+  </div>
+
+  <!-- Top Bar -->
+
+</body>
+</html>
